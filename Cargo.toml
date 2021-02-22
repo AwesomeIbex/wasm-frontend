@@ -1,9 +1,9 @@
 [package]
-version = "0.1.0"
-name = "kavik_cz"
+version = "0.0.1"
+name = "awesomeibex"
 repository = "https://github.com/MartinKavik/kavik.cz"
-authors = ["Martin Kavík <martin@kavik.cz>"]
-description = "Personal website kavik.cz"
+authors = ["AwesomeIbex <awesomeibex@gmail.com>"]
+description = "Personal website"
 categories = ["wasm", "rust", "tailwindcss", "seed", "personal", "website"]
 license = "MIT"
 readme = "./README.md"

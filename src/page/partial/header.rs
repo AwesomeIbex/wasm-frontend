@@ -78,36 +78,36 @@ pub fn view(model: &Model) -> Vec<Node<Msg>> {
             ]
         ),
         // Photo 1
-        IF!(model.page == Page::About =>
-            div![
-                C![
-                    C.absolute,
-                    C.top_0,
-                    C.inset_x_0,
-                    C.mt_6,
-                    C.flex,
-                    C.justify_center
-                    // sm__
-                    C.sm__mt_10,
-                    // md__
-                    C.md__mt_8,
-                ],
-                img![
-                    C![
-                        C.w_xs,
-                        C.h_full,
-                        C.object_contain,
-                        // sm__
-                        C.sm__w_100,
-                        // lg
-                        C.lg__w_570px,
-                    ],
-                    attrs! {
-                        At::Src => image_src("photo_1.png")
-                    }
-                ],
-            ]
-        ),
+        // IF!(model.page == Page::About =>
+        //     div![
+        //         C![
+        //             C.absolute,
+        //             C.top_0,
+        //             C.inset_x_0,
+        //             C.mt_6,
+        //             C.flex,
+        //             C.justify_center
+        //             // sm__
+        //             C.sm__mt_10,
+        //             // md__
+        //             C.md__mt_8,
+        //         ],
+        //         img![
+        //             C![
+        //                 C.w_xs,
+        //                 C.h_full,
+        //                 C.object_contain,
+        //                 // sm__
+        //                 C.sm__w_100,
+        //                 // lg
+        //                 C.lg__w_570px,
+        //             ],
+        //             attrs! {
+        //                 At::Src => image_src("photo_1.png")
+        //             }
+        //         ],
+        //     ]
+        // ),
         // Menu
         IF!(model.menu_visibility == Visible =>
             div![
@@ -380,9 +380,9 @@ pub fn view(model: &Model) -> Vec<Node<Msg>> {
                                     C.md__hover__text_yellow_7,
                                 ],
                                 attrs! {
-                                    At::Href => asset_path("Martin_Kavik_resume.pdf")
+                                    At::Href => asset_path("DonDallCV.pdf")
                                 },
-                                "Resume",
+                                "CV",
                                 span![
                                     C![
                                         // md__

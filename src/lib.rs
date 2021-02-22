@@ -19,18 +19,12 @@ use Visibility::*;
 
 const TITLE_SUFFIX: &str = "Donovandall.com";
 // https://mailtolink.me/
-const MAIL_TO_KAVIK: &str = "mailto:awesomealpineibex@gmail.com?subject=Something%20for%20Don&body=Hi!%0A%0AI%20am%20Groot.%20I%20like%20trains.";
-const MAIL_TO_HELLWEB: &str =
-    "mailto:awesomealpineibex@gmail.com?subject=Hellweb%20-%20pain&body=Hi!%0A%0AI%20hate";
+const MAIL_TO: &str = "mailto:awesomealpineibex@gmail.com?subject=Something%20for%20Don&body=Hi!%0A%0AI%20am%20Groot.%20I%20like%20trains.";
 const USER_AGENT_FOR_PRERENDERING: &str = "ReactSnap";
 const STATIC_PATH: &str = "static";
 const IMAGES_PATH: &str = "static/images";
 
 const ABOUT: &str = "about";
-
-// ------ ------
-//     Init
-// ------ ------
 
 fn init(url: Url, orders: &mut impl Orders<Msg>) -> Model {
     orders
@@ -52,10 +46,6 @@ fn is_in_prerendering() -> bool {
 
     user_agent == USER_AGENT_FOR_PRERENDERING
 }
-
-// ------ ------
-//     Model
-// ------ ------
 
 #[derive(Clone, Copy, Eq, PartialEq)]
 pub enum Visibility {
@@ -105,10 +95,6 @@ impl Page {
     }
 }
 
-// ------ ------
-//     Urls
-// ------ ------
-
 struct_urls!();
 impl<'a> Urls<'a> {
     pub fn home(self) -> Url {
@@ -119,10 +105,6 @@ impl<'a> Urls<'a> {
         self.base_url().add_path_part(ABOUT)
     }
 }
-
-// ------ ------
-//    Update
-// ------ ------
 
 pub enum Msg {
     UrlChanged(subs::UrlChanged),
@@ -159,10 +141,6 @@ pub fn update(msg: Msg, model: &mut Model, _: &mut impl Orders<Msg>) {
     }
 }
 
-// ------ ------
-//     View
-// ------ ------
-
 // Notes:
 // - \u{00A0} is the non-breaking space
 //   - https://codepoints.net/U+00A0
@@ -195,10 +173,6 @@ pub fn image_src(image: &str) -> String {
 pub fn asset_path(asset: &str) -> String {
     format!("{}/{}", STATIC_PATH, asset)
 }
-
-// ------ ------
-//     Start
-// ------ ------
 
 #[wasm_bindgen(start)]
 pub fn run() {
