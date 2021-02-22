@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/312253a6-9e89-48df-818a-c52d3a7bf43c/deploy-status)](https://app.netlify.com/sites/vigilant-murdock-d01517/deploys)
+
 # Seed Quickstart with Webpack
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/745c7b1d-5894-4f58-be28-e730a11e1ff4/deploy-status)](https://app.netlify.com/sites/quickstart-webpack/deploys)

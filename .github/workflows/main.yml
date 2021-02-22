@@ -33,7 +33,7 @@ jobs:
         run: yarn
 
       - name: Build & prerender
-        run: yarn build:prerender
+        run: yarn build:release
 
       - name: Run tests
         run: cargo make verify_only
