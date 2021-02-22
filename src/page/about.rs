@@ -1,5 +1,5 @@
 use crate::{
-    asset_path, generated::css_classes::C, image_src, Msg, MAIL_TO_KAVIK,
+    asset_path, generated::css_classes::C, image_src, Msg, MAIL_TO,
 };
 use seed::{prelude::*, *};
 
@@ -1185,13 +1185,13 @@ pub fn view() -> Node<Msg> {
                         "Is there good coffee, tea, sushi or some spicy food? Ok! ",
                         a![
                             attrs!{
-                                At::Href => MAIL_TO_KAVIK,
+                                At::Href => MAIL_TO,
                             },
                             C![
                                 C.underline,
                                 C.underline_yellow_7,
                             ],
-                            "martin@kavik.cz"
+                            "awesomeibex@gmail.com"
                         ]
                     ]
                 ],
@@ -1208,7 +1208,7 @@ pub fn view() -> Node<Msg> {
             // Download my resume
             a![
                 attrs!{
-                    At::Href => asset_path("Martin_Kavik_resume.pdf")
+                    At::Href => asset_path("DonovanDallCV.pdf")
                 },
                 C![
                     C.mt_24,

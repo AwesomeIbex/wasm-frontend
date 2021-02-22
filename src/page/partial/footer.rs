@@ -1,4 +1,4 @@
-use crate::{generated::css_classes::C, image_src, Msg, MAIL_TO_KAVIK};
+use crate::{generated::css_classes::C, image_src, Msg, MAIL_TO};
 use seed::{prelude::*, *};
 
 pub fn view() -> Node<Msg> {
@@ -55,7 +55,7 @@ pub fn view() -> Node<Msg> {
             ],
             a![
                 attrs! {
-                    At::Href => MAIL_TO_KAVIK,
+                    At::Href => MAIL_TO,
                 },
                 C![
                     C.font_display,
