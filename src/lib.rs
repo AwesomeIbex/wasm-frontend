@@ -17,11 +17,11 @@ use generated::css_classes::C;
 use seed::{prelude::*, *};
 use Visibility::*;
 
-const TITLE_SUFFIX: &str = "Kavik.cz";
+const TITLE_SUFFIX: &str = "Donovandall.com";
 // https://mailtolink.me/
-const MAIL_TO_KAVIK: &str = "mailto:martin@kavik.cz?subject=Something%20for%20Martin&body=Hi!%0A%0AI%20am%20Groot.%20I%20like%20trains.";
+const MAIL_TO_KAVIK: &str = "mailto:awesomealpineibex@gmail.com?subject=Something%20for%20Don&body=Hi!%0A%0AI%20am%20Groot.%20I%20like%20trains.";
 const MAIL_TO_HELLWEB: &str =
-    "mailto:martin@hellweb.app?subject=Hellweb%20-%20pain&body=Hi!%0A%0AI%20hate";
+    "mailto:awesomealpineibex@gmail.com?subject=Hellweb%20-%20pain&body=Hi!%0A%0AI%20hate";
 const USER_AGENT_FOR_PRERENDERING: &str = "ReactSnap";
 const STATIC_PATH: &str = "static";
 const IMAGES_PATH: &str = "static/images";

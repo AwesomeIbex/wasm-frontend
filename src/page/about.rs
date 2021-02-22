@@ -1257,7 +1257,7 @@ pub fn view() -> Node<Msg> {
             // My GitHub profile
             a![
                 attrs!{
-                    At::Href => "https://github.com/MartinKavik"
+                    At::Href => "https://github.com/AwesomeIbex"
                 },
                 C![
                     C.mt_16,

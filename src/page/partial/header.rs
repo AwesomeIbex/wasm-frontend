@@ -218,10 +218,10 @@ pub fn view(model: &Model) -> Vec<Node<Msg>> {
                                     C.sm__justify_center,
                                 ],
                                 attrs! {
-                                    At::Href => asset_path("Martin_Kavik_resume.pdf")
+                                    At::Href => asset_path("DonovanDallCV.pdf")
                                 },
                                 ev(Ev::Click, |_| Msg::HideMenu),
-                                "Resume",
+                                "CV",
                                 span![C![C.text_gray_5,], ".pdf"]
                             ]
                         ],
@@ -241,7 +241,7 @@ pub fn view(model: &Model) -> Vec<Node<Msg>> {
                                     C.sm__justify_center,
                                 ],
                                 attrs! {
-                                    At::Href => "https://github.com/MartinKavik"
+                                    At::Href => "https://github.com/AwesomeIbex"
                                 },
                                 ev(Ev::Click, |_| Msg::HideMenu),
                                 "GitHub",
@@ -409,7 +409,7 @@ pub fn view(model: &Model) -> Vec<Node<Msg>> {
                                     C.md__hover__text_yellow_7,
                                 ],
                                 attrs! {
-                                    At::Href => "https://github.com/MartinKavik"
+                                    At::Href => "https://github.com/AwesomeIbex"
                                 },
                                 "GitHub",
                                 img![

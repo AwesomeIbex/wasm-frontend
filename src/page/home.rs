@@ -98,9 +98,9 @@ pub fn view(base_url: &Url) -> Node<Msg> {
                             ],
                             "\u{00A0}is",
                             br![],
-                            "a developer",
+                            "a software engineer",
                             br![],
-                            "with 7+ years of experience",
+                            "with 2+ years of experience",
                             br![],
                             "who likes to design and ..."
                         ]

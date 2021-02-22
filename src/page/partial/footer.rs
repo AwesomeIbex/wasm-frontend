@@ -67,7 +67,7 @@ pub fn view() -> Node<Msg> {
                     // sm__
                     C.sm__text_26
                 ],
-                "martin@kavik.cz"
+                "awesomealpineibex@gmail.com"
             ],
             div![
                 C![C.cursor_pointer, C.h_full, C.flex, C.items_center,],
